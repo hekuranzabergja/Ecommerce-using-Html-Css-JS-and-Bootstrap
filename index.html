@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Kemi Shoes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="img/font-awesome.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/nav.css">
+
+</head>
+
+<body>
+
+
+   <nav>
+    <div class="heademenu">
+      <i class='bx bx-menu'></i>
+      <div class="brandlogo"><a href="index.html"><img src="img/33.jpg" style="width: 80px; height: 50px;" alt=""></a></div>
+      <div class="nav-relations">
+        <div class="sidebar-brandlogo">
+          <span class="brandlogo-name"><a href="index.html"><img src="img/33.jpg" style="width: 80px; height: 50px;" alt=""></a></span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="relations">
+          <li><a href="index.html">Ballina</a></li>
+          <li>
+            <a href="#">Category</a>
+            <i class='bx bxs-chevron-down customWeb-arrow arrow  '></i>
+            <ul class="customWeb-child-nav child-nav">
+             
+              <li class="more">
+                <span><a href="#">Djem</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-child-nav child-nav">
+                  <li><a href="products.html">Kepuce</a></li>
+                  <li><a href="products.html">Puma</a></li>
+                  <li><a href="products.html">Qizme</a></li>
+                </ul>
+              </li>
+
+			    <li class="more">
+                <span><a href="#">Vajza</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-child-nav child-nav">
+                  <li><a href="products.html">Kepuce</a></li>
+                  <li><a href="products.html">Puma</a></li>
+                  <li><a href="products.html">Qizme</a></li>
+                </ul>
+              </li>
+
+			    <li class="more">
+                <span><a href="#">Femije</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-child-nav child-nav">
+                  <li><a href="products.html">Kepuce</a></li>
+                  <li><a href="products.html">Patika</a></li>
+                  <li><a href="products.html">Qizme</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+           
+		    <li>
+            <a href="#">Tjera</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-child-nav child-nav">
+              <li><a href="check-out.html">Check Out</a></li>
+              <li><a href="shopping-cart.html">My Cart</a></li>
+              
+            </ul>
+          </li>
+          <li><a href="#">Rreth nesh</a></li>
+          <li><a href="#">Na Kontaktoni</a></li>
+        </ul>
+      </div>
+      <div class="custom-search">
+        <i class='bx bx-search' style="color: #000;"></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+	<!-- Slider start -->
+	<div class="slides">
+		<div class="slide">
+			<img src="img/3402.jpg" alt="">
+		</div>
+		<div class="slide">
+			<img src="img/3393.jpg" alt="">
+		</div>
+
+		<div class="navigation">
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(-1)">&#10095;</a>
+		</div>
+	</div>
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("slide");
+			if (n > slides.length) {
+				slideIndex = 1;
+			}
+			if (n < 1) {
+				slideIndex = slides.length
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slides[slideIndex - 1].style.display = "block";
+		}
+	</script>
+	<!--Slider end  -->
+
+
+
+ <!-- ***** Men Area Starts ***** -->
+ <section class="section" id="men">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="section-heading">
+					<h2>New Collection</h2>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container2">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="men-item-carousel">
+					<div class="owl-men-item owl-carousel">
+						<div class="item">
+							<div class="thumb">
+								<div class="hover-content">
+									<ul>
+										<li><a href="product-detalis.html"><i class="fas fa-eye"></i></a></li>
+										
+										<li><a href="check-out.html"><i class="fas fa-shopping-cart"></i></a></li>
+									</ul>
+								</div>
+								<img src="img/53.jpg" alt="">
+							</div>
+							<div class="down-content">
+								<h4>Classic Spring</h4>
+								<span>$120.00</span>
+								
+							</div>
+						</div>
+						<div class="item">
+							<div class="thumb">
+								<div class="hover-content">
+									<ul>
+										<li><a href="product-detalis.html"><i class="fas fa-eye"></i></a></li>
+										<li><a href="check-out.html"><i class="fas fa-shopping-cart"></i></a></li>
+									</ul>
+								</div>
+								<img src="img/53.jpg" alt="">
+							</div>
+							<div class="down-content">
+								<h4>Air Force 1 X</h4>
+								<span>$90.00</span>
+							   
+							</div>
+						</div>
+						<div class="item">
+							<div class="thumb">
+								<div class="hover-content">
+									<ul>
+										<li><a href="product-detalis.html"><i class="fas fa-eye"></i></a></li>
+										<li><a href="check-out.html"><i class="fas fa-shopping-cart"></i></a></li>
+									</ul>
+								</div>
+								<img src="img/53.jpg" alt="">
+							</div>
+							<div class="down-content">
+								<h4>Love Nana ‘20</h4>
+								<span>$150.00</span>
+							   
+							</div>
+						</div>
+						<div class="item">
+							<div class="thumb">
+								<div class="hover-content">
+									<ul>
+										<li><a href="product-detalis.html"><i class="fas fa-eye"></i></a></li>
+										<li><a href="check-out.html"><i class="fas fa-shopping-cart"></i></a></li>
+									</ul>
+								</div>
+								<img src="img/20.jpg" alt="">
+							</div>
+							<div class="down-content">
+								<h4>Classic Spring</h4>
+								<span>$120.00</span>
+							   
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ***** Men Area Ends ***** -->
+
+<br>
+<br>
+
+	  <!-- ***** Main Banner Area Start ***** -->
+	  <div class="main-banner" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-content">
+                        <div class="promotion-item">
+							<img src="img/16.jpg" alt="" />
+							<div class="promotion-content">
+								<h3>CASUAL SHOES</h3>
+								<a href="products.html">SHOP NOW</a>
+							</div>
+						</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="item" >
+                                        <div class="thumb" >
+                                            
+                                            <img src="img/148.jpg" alt="">
+                                        </div>
+                                        <div class="down-content">
+                                            <h4>Classic Spring</h4>
+                                            <h4>$120.00</h4>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="item">
+                                        <div class="thumb">
+                                           
+                                            <img src="img/148.jpg" alt="">
+                                        </div>
+                                        <div class="down-content">
+                                            <h4>Classic Spring</h4>
+                                            <h4>$120.00</h4>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="item">
+                                        <div class="thumb">
+                                           
+                                            <img src="img/148.jpg" alt="">
+                                        </div>
+                                        <div class="down-content">
+                                            <h4>Classic Spring</h4>
+                                            <h4>$120.00</h4>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="item">
+                                        <div class="thumb">
+                                           
+                                            <img src="img/148.jpg" alt="">
+                                        </div>
+                                        <div class="down-content">
+                                            <h4>Classic Spring</h4>
+                                            <h4>$120.00</h4>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+<br>
+<br>
+<br>
+
+<hr>
+	<section class="section1 promotion">
+		<div class="title">
+			<h2>Shop Collections</h2>
+		</div>
+
+		<div class="promotion-layout container1">
+			<div class="promotion-item">
+				<img src="img/53.jpg" alt="" />
+				<div class="promotion-content">
+					<h3>FOR MEN</h3>
+					<a href="products.html">SHOP NOW</a>
+				</div>
+			</div>
+
+			<div class="promotion-item">
+				<img src="img/16.jpg" alt="" />
+				<div class="promotion-content">
+					<h3>CASUAL SHOES</h3>
+					<a href="products.html">SHOP NOW</a>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+	<br>
+	<br>
+	<br>
+
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Kemi Shoes</h6>
+            <p class="text-justify">KEMI SHOES eshte.... lorem lorem lorem lorem lorem lorem lorem loremlorem lorem loremlorem lorem lorem</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>KAtegorite</h6>
+            <ul class="footer-links">
+              <li><a href="products.html">Djem</a></li>
+              <li><a href="products.html">Vajza</a></li>
+              <li><a href="products.html">Femje</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Te tjera</h6>
+            <ul class="footer-links">
+              <li><a href="#">Rreth nesh</a></li>
+              <li><a href="#">Na kontaktoni</a></li>
+            
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+         <a href="#">NPost</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fas fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fas fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fas fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+	<script src="js/jquery-2.1.0.min.js"></script>
+
+ <script src="js/bootstrap.min.js"></script>
+
+ <!-- Plugins -->
+ <script src="js/owl-carousel.js"></script>
+ 
+ 
+
+ <script src="js/custom.js"></script>
+ <script src="js/nav.js"></script>
+
+
+
+	<!-- <script src="js/script.js"></script> -->
+
+</body>
+
+</html>

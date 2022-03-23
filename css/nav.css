@@ -1,0 +1,292 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+        }
+      
+        nav{
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          height: 70px;
+          background: #fff;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          z-index: 99;
+        }
+        nav .heademenu{
+          height: 100%;
+          max-width: 1250px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: auto;
+          padding: 0 50px;
+        }
+        .heademenu .brandlogo a{
+          font-size: 20px;
+          color: #000;
+          text-decoration: none;
+          font-weight: 600;
+        }
+        nav .heademenu .nav-relations{
+          line-height: 70px;
+          height: 100%;
+        }
+        nav .heademenu .relations{
+          display: flex;
+        }
+        nav .heademenu .relations li{
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          list-style: none;
+          padding: 0 14px;
+        }
+        nav .heademenu .relations li a{
+          height: 100%;
+          text-decoration: none;
+          white-space: nowrap;
+          color: #000;
+          font-size: 15px;
+          font-weight: 500;
+        }
+        .relations li:hover .customWeb-arrow,
+        .relations li:hover .js-arrow{
+          transform: rotate(180deg);
+          }
+
+        nav .heademenu .relations li .arrow{
+          height: 100%;
+          width: 22px;
+          line-height: 70px;
+          text-align: center;
+          display: inline-block;
+          color: #000;
+          transition: all 0.3s ease;
+        }
+        nav .heademenu .relations li .child-nav{
+          position: absolute;
+          top: 70px;
+          left: 0;
+          line-height: 40px;
+          background: #fff;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          border-radius: 0 0 4px 4px;
+          display: none;
+          z-index: 2;
+        }
+        nav .heademenu .relations li:hover .customWeb-child-nav,
+        nav .heademenu .relations li:hover .js-child-nav{
+          display: block;
+        }
+        .heademenu .relations li .child-nav li{
+          padding: 0 22px;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .heademenu .relations li .child-nav a{
+          color: #000;
+          font-size: 15px;
+          font-weight: 500;
+        }
+        .heademenu .relations li .child-nav .more-arrow{
+          line-height: 40px;
+        }
+     
+        .heademenu .relations li .child-nav .more-child-nav{
+          position: absolute;
+          top: 0;
+          left: 100%;
+          border-radius: 0 4px 4px 4px;
+          z-index: 1;
+          display: none;
+        }
+        .relations li .child-nav .more:hover .more-child-nav{
+          display: block;
+        }
+        .heademenu .custom-search{
+          position: relative;
+           height: 40px;
+          width: 40px;
+        }
+        .heademenu .custom-search i{
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          line-height: 40px;
+          text-align: center;
+          font-size: 22px;
+          color: #000;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .heademenu .custom-search .input-box{
+          position: absolute;
+          right: calc(100% - 40px);
+          top: 80px;
+          height: 60px;
+          width: 300px;
+          background: #000;
+          border-radius: 6px;
+          opacity: 0;
+          pointer-events: none;
+          transition: all 0.4s ease;
+        }
+        .heademenu.showInput .custom-search .input-box{
+          top: 65px;
+          opacity: 1;
+          pointer-events: auto;
+          background: #000;
+        }
+        .custom-search .input-box::before{
+          content: '';
+          position: absolute;
+          height: 20px;
+          width: 20px;
+          background: #000;
+          right: 10px;
+          top: -6px;
+          transform: rotate(45deg);
+        }
+        .custom-search .input-box input{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          border-radius: 4px;
+          transform: translate(-50%, -50%);
+          height: 35px;
+          width: 280px;
+          outline: none;
+          padding: 0 15px;
+          font-size: 16px;
+          border: none;
+        }
+        .heademenu .nav-relations .sidebar-brandlogo{
+          display: none;
+        }
+        .heademenu .bx-menu{
+          display: none;
+        }
+        @media (max-width:920px) {
+          nav .heademenu{
+            max-width: 100%;
+            padding: 0 25px;
+          }
+
+          nav .heademenu .brandlogo a{
+            font-size: 27px;
+          }
+          nav .heademenu .relations li{
+            padding: 0 10px;
+            white-space: nowrap;
+          }
+          nav .heademenu .relations li a{
+            font-size: 15px;
+          }
+        }
+        @media (max-width:800px){
+       
+          .heademenu .bx-menu{
+            display: block;
+          }
+          nav .heademenu .nav-relations{
+            position: fixed;
+            top: 0;
+            left: -100%;
+            display: block;
+            max-width: 270px;
+            width: 100%;
+            background:  #fff;
+            line-height: 40px;
+            padding: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s ease;
+            z-index: 1000;
+          }
+          .heademenu .nav-relations .sidebar-brandlogo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sidebar-brandlogo .brandlogo-name{
+            font-size: 25px;
+            color: #000;
+          }
+            .sidebar-brandlogo  i,
+            .heademenu .bx-menu{
+              font-size: 25px;
+              color: #000;
+            }
+          nav .heademenu .relations{
+            display: block;
+            margin-top: 20px;
+          }
+          nav .heademenu .relations li .arrow{
+            line-height: 40px;
+          }
+        nav .heademenu .relations li{
+            display: block;
+          }
+        nav .heademenu .relations li .child-nav{
+          position: relative;
+          top: 0;
+          box-shadow: none;
+          display: none;
+        }
+        nav .heademenu .relations li .child-nav li{
+          border-bottom: none;
+
+        }
+        .heademenu .relations li .child-nav .more-child-nav{
+          display: none;
+          position: relative;
+          left: 0;
+        }
+        .heademenu .relations li .child-nav .more-child-nav li{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .relations li:hover .customWeb-arrow,
+        .relations li:hover .js-arrow{
+          transform: rotate(0deg);
+          }
+          .heademenu .relations li .child-nav .more-child-nav{
+            display: none;
+          }
+          .heademenu .relations li .child-nav .more span{
+            /* background: red; */            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */          }
+
+          .relations li .child-nav .more:hover .more-child-nav{
+            display: none;
+          }
+          nav .heademenu .relations li:hover .customWeb-child-nav,
+          nav .heademenu .relations li:hover .js-child-nav{
+            display: none;
+          }
+        .heademenu .nav-relations.show1 .relations .customWeb-child-nav,
+          .heademenu .nav-relations.show3 .relations .js-child-nav,
+          .heademenu .nav-relations.show2 .relations .more .more-child-nav{
+              display: block;
+            }
+            .heademenu .nav-relations.show1 .relations .customWeb-arrow,
+            .heademenu .nav-relations.show3 .relations .js-arrow{
+                transform: rotate(180deg);
+        }
+            .heademenu .nav-relations.show2 .relations .more-arrow{
+              transform: rotate(90deg);
+            }
+        }
+        @media (max-width:370px){
+          nav .heademenu .nav-relations{
+          max-width: 100%;
+        } 
+        }
